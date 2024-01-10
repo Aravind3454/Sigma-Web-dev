@@ -1,0 +1,15 @@
+p{
+    background-color: aqua;
+}
+
+a{
+    background-color: rgb(228, 121, 13);
+    /* you can select colors by hobering on the square color icon  */
+}
+
+div{
+    background-color: rgb(178, 24, 193);
+}
+span{
+    background-color: aquamarine;
+}

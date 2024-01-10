@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making forms</title>
+</head>
+
+<body>
+    <h1>Form to appply web dev Course</h1>
+    <form action="post">
+        <div>
+            <label for="username">
+                Enter your Username
+            </label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <!-- placeholder value shows the text in the textbox if it is not selected -->
+        </div>
+
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+        </div>
+
+        <div>
+            <label for="subscribe"> Subscribe to this course</label>
+            <input type="checkbox" name="subscribe" id="subscribe" value="yes">
+
+        </div>
+        <div>
+            <!-- Tthis is textarea element  -->
+            <label for="comment">Enter your comment</label>
+            <br>
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter your comments ">
+
+            </textarea>
+        </div>
+        <div>
+            <!-- This is for select tag  -->
+            <label for="fruits">Select a fruit</label>
+            <select name="fruits" id="fruits">
+                <option value="apple">Apple</option>
+                <option value="mango">Mango</option>
+                <option value="cherry">Cherry</option>
+
+            </select>
+        </div>
+        <div>
+            <label for="email">Enter Email id</label>
+            <input type="email" name="email" id="email">
+            <div>
+                <label for="dob">Date of birth</label>
+                <input type="date" name="DOB" id="dob">
+                <!-- This gives us a calender for selecting date  -->
+            </div>
+        </div>
+        <div>
+            <!-- This is submit button -->
+            <label for="submit">If complete click done</label>
+            <input type="submit" value="done">
+        </div>
+        <div>
+            <label for="reset">Reset</label>
+            <input type="reset" value="undo all">
+        </div>
+    </form>
+
+</body>
+
+</html>

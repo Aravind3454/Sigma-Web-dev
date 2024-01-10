@@ -1,0 +1,12 @@
+.red{
+    /* . is used for class  */
+    color: red;
+}
+.bg-yellow{
+    background-color: yellow;
+}
+
+#firstdiv{
+    /* # is used for targeting id  */
+    /* background-color: red;  */
+}
