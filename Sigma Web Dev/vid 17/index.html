@@ -3,9 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Selectors</title>
+    <style>
+        /* element selectors  */
+        div{
+            /* background-color: blueviolet; */
+        }
+        /* class selectors  */
+        .red{
+            background-color: red;
+        }
+        /* id selectors  */
+        #green{
+            background-color: greenyellow;
+        }
+
+        /* child selectors */
+        div > p {
+            color: blue;
+            background-color: brown;
+        }
+        /* decsendent selector  */
+        div p{
+            color: cornflowerblue;
+            background-color: deeppink;
+        }
+        /* universal selector  */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selectors */
+        a:visited{
+            color:yellow;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: darkcyan;
+        }
+
+        p:first-child{
+            background-color: gold;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="one">
+        I am one
+    </div>
+    <main class="one">
+        <p>I am first child </p>
+        <p>I am Second Child</p>
+    </main>
+    <div class="red">
+        I am a div 
+        <br>
+        <article>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, quod?
+            </p>
+        </article>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo eligendi distinctio et quae incidunt deserunt.
+        </p>
+    </div>
+    <span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, sit.
+    </span>
+    <div id="green">
+        <!-- id selector  -->
+        Ia an another div
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook.com">Go to Facebook</a>
+
 </body>
 </html>
